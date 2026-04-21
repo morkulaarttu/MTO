@@ -46,7 +46,7 @@ It also includes a built-in YouTube downloader that pulls audio directly into OG
 
 Get the latest release from the [Releases page](https://github.com/MorkulaArttu/MTO/releases).
 
-Download `MTO.exe` — no installation required, just run it.
+Download `MTO.zip`, extract it, and start MTO.exe file.
 
 > **First launch:** MTO will automatically download FFmpeg (~70 MB) and yt-dlp (~10 MB) from GitHub. This only happens once.
 
@@ -78,17 +78,6 @@ Download `MTO.exe` — no installation required, just run it.
 4. Press **+ Add to Queue** to queue multiple links
 5. Select your destination folder
 6. Press **Download**
-
----
-
-## Building from Source
-
-```bash
-pip install customtkinter pystray pillow
-python -m PyInstaller --onefile --windowed --name "MTO" --icon "logo.ico" --clean app.py
-```
-
-Place `logo.ico` in the same folder as `app.py` before building.
 
 ---
 
