@@ -83,7 +83,7 @@ Download `MTO.zip`, extract it, and start MTO.exe file.
 
 ## License
 
-Copyright © 2025 @MorkulaArttu. All rights reserved.
+Copyright © 2026 @MorkulaArttu. All rights reserved.
 
 This software is free to use but may not be modified, redistributed, or repackaged without explicit written permission from the author.
 
