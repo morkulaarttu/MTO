@@ -6,7 +6,7 @@
 
 **A modern audio converter and YouTube downloader built for My Winter Car.**
 
-[![Version](https://img.shields.io/badge/version-1.0.0--beta-7b68ee?style=flat-square)](https://github.com/MorkulaArttu/MTO/releases)
+[![Version](https://img.shields.io/badge/version-1.0.2--beta-7b68ee?style=flat-square)](https://github.com/MorkulaArttu/MTO/releases)
 [![Platform](https://img.shields.io/badge/platform-Windows-0078d4?style=flat-square)](https://github.com/MorkulaArttu/MTO/releases)
 [![License](https://img.shields.io/badge/license-All%20Rights%20Reserved-red?style=flat-square)](#license)
 
