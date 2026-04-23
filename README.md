@@ -4,11 +4,11 @@
 
 <img src="logoMTO.png" width="120" alt="MTO Logo"/>
 
-**A modern audio converter and YouTube downloader built for My Winter Car.**
+**A free audio converter and YouTube downloader built for My Winter Car.**
 
-[![Version](https://img.shields.io/badge/version-1.1.0--beta-7b68ee?style=flat-square)](https://github.com/MorkulaArttu/MTO/releases)
-[![Platform](https://img.shields.io/badge/platform-Windows-0078d4?style=flat-square)](https://github.com/MorkulaArttu/MTO/releases)
-[![License](https://img.shields.io/badge/license-All%20Rights%20Reserved-red?style=flat-square)](#license)
+[![Version](https://img.shields.io/badge/version-1.1.0--beta-7b68ee?style=flat-square)](https://github.com/morkulaarttu/MTO/releases)
+[![Platform](https://img.shields.io/badge/platform-Windows-0078d4?style=flat-square)](https://github.com/morkulaarttu/MTO/releases)
+[![License](https://img.shields.io/badge/license-GPL%20v3-green?style=flat-square)](LICENSE)
 
 </div>
 
@@ -16,11 +16,9 @@
 
 ## What is MTO?
 
-MTO (Mp3ToOgg) is a free desktop tool that converts MP3 audio files to OGG format — built specifically for *My Winter Car* players who want custom radio tracks in the game.
+MTO (Mp3ToOgg) is a free Windows tool that lets you add any YouTube song directly to your My Winter Car radio — just paste a link and MTO downloads, converts, and saves it to your Radio folder automatically.
 
-Point it at a folder of MP3s, set your My Winter Car Radio directory as the destination, and MTO handles everything automatically — naming files `track1.ogg`, `track2.ogg` and so on, always picking the next free number without overwriting anything.
-
-It also includes a built-in YouTube downloader that pulls audio directly into OGG format, ready to drop straight into the game.
+It also supports converting your own MP3 files. Tracks are automatically named `track1.ogg`, `track2.ogg` and so on, always picking the next free slot without overwriting anything. Your My Winter Car Radio folder is auto-detected via Steam.
 
 ---
 
@@ -33,22 +31,28 @@ It also includes a built-in YouTube downloader that pulls audio directly into OG
 - **Download queue** — add multiple links and let it run
 - **Video preview** before downloading
 - **Conversion history** log
-- **Select & reorder** files before converting — checkboxes and ↑↓ buttons
+- **Select & reorder** files before converting
+- **Conversion speed** slider — Low / Normal / High CPU usage
 - **Windows notifications** when jobs finish
+- **Settings tab** — theme, accent color, language, font size, update management
 - **Dark & light theme** with accent color picker
 - **9 languages** — English, Finnish, Swedish, German, French, Spanish, Chinese, Japanese, Korean
 - **Minimize to system tray**
+- **Auto-updater** — checks GitHub for new releases on startup
+- **First-run tutorial** — interactive walkthrough on first launch
 - **No manual setup** — FFmpeg and yt-dlp install automatically on first launch
 
 ---
 
 ## Download
 
-Get the latest release from the [Releases page](https://github.com/MorkulaArttu/MTO/releases).
+Get the latest release from the [Releases page](https://github.com/morkulaarttu/MTO/releases).
 
-Download `MTO.zip`, extract it, and start MTO.exe file.
+Download `MTO.zip`, extract it, and run `MTO.exe` — no installation required.
 
 > **First launch:** MTO will automatically download FFmpeg (~70 MB) and yt-dlp (~10 MB) from GitHub. This only happens once.
+
+> **SmartScreen warning:** Click "More info" → "Run anyway". This warning appears because the app does not have a paid code signing certificate, not because it is dangerous.
 
 ---
 
@@ -57,6 +61,29 @@ Download `MTO.zip`, extract it, and start MTO.exe file.
 - Windows 10 or 11
 - Internet connection (first launch only, for FFmpeg + yt-dlp)
 - My Winter Car on Steam (for auto-detection — optional)
+
+---
+
+## Building from Source
+
+**Install dependencies:**
+```bash
+pip install -r requirements.txt
+```
+
+**Build with Nuitka (recommended — obfuscated):**
+```bash
+python -m nuitka --onefile --windows-console-mode=disable --windows-icon-from-ico=logo.ico --output-filename=MTO.exe --output-dir=dist --enable-plugin=tk-inter --nofollow-import-to=tkinter.test --assume-yes-for-downloads app.py
+```
+
+**Or build with PyInstaller (simpler):**
+```bash
+python -m PyInstaller --onefile --windowed --name "MTO" --icon "logo.ico" --clean app.py
+```
+
+Place `logo.ico` in the same folder as `app.py` before building.
+
+You can also use the included `build.bat` which handles everything automatically.
 
 ---
 
@@ -81,16 +108,25 @@ Download `MTO.zip`, extract it, and start MTO.exe file.
 
 ---
 
+## Logs
+
+MTO writes log files to:
+```
+C:\Users\<you>\AppData\Roaming\MP3toOGG\logs\MTO.log
+```
+
+Log files rotate automatically and never exceed 1 MB each. If something goes wrong, this file will help diagnose the issue.
+
+---
+
 ## License
 
-Copyright © 2026 @MorkulaArttu. All rights reserved.
+Copyright © 2025 @MorkulaArttu.
 
-This software is free to use but may not be modified, redistributed, or repackaged without explicit written permission from the author.
-
-See [LICENSE](LICENSE) for full terms.
+Licensed under the **GNU General Public License v3**. See [LICENSE](LICENSE) for full terms.
 
 ---
 
 <div align="center">
-Made by <a href="https://github.com/MorkulaArttu">@MorkulaArttu</a>
+Made by <a href="https://github.com/morkulaarttu">@MorkulaArttu</a>
 </div>
