@@ -1,35 +1,45 @@
-# ── Build output ──────────────────────────────────────────────────────────────
+# Build output
 dist/
 build/
 *.spec
 
-# ── PyInstaller ───────────────────────────────────────────────────────────────
+# Nuitka
+*.onefile-build/
+app.build/
+app.dist/
+MTO.build/
+MTO.dist/
+
+# Python cache
 __pycache__/
 *.py[cod]
 *.pyo
 
-# ── Virtual environments ──────────────────────────────────────────────────────
+# Virtual environments
 venv/
 .venv/
 env/
 .env/
 
-# ── IDE / Editor ──────────────────────────────────────────────────────────────
+# IDE / Editor
 .vscode/
 .idea/
 *.suo
 *.user
 
-# ── OS ────────────────────────────────────────────────────────────────────────
+# OS
 .DS_Store
 Thumbs.db
 desktop.ini
 
-# ── App data (user-specific, not for repo) ────────────────────────────────────
+# App data — user specific, not for repo
 config.json
 history.json
+logs/
 
-# ── Temporary files ───────────────────────────────────────────────────────────
+# Temp / update files
 *.tmp
-*.log
 *.bak
+MTO_update.zip
+MTO_new.exe
+update.bat
