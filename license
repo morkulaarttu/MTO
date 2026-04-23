@@ -1,16 +1,30 @@
+GNU GENERAL PUBLIC LICENSE
+Version 3, 29 June 2007
+
 Copyright © 2026 @MorkulaArttu. All rights reserved.
 
-This software (MTO — Mp3ToOgg) is provided free of charge for personal use.
+MTO (Mp3ToOgg) — Free audio converter and YouTube downloader for My Winter Car.
 
-The following are strictly prohibited without explicit written permission from the author:
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
 
-  - Modifying or creating derivative works based on this software
-  - Redistributing, sublicensing, or repackaging this software
-  - Selling or commercially exploiting this software in any form
-  - Removing or altering any copyright notices or author attributions
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES OR
-OTHER LIABILITY ARISING FROM THE USE OF THIS SOFTWARE.
+You should have received a copy of the GNU General Public License
+along with this program. If not, see <https://www.gnu.org/licenses/>.
 
-For permissions or inquiries, contact: @MorkulaArttu on GitHub.
+---
+
+ADDITIONAL TERMS (permitted under GPL v3 Section 7)
+
+The name "MTO", "Mp3ToOgg", and "@MorkulaArttu" may not be used to
+endorse or promote products derived from this software without prior
+written permission from the original author.
+
+Any modified versions must be clearly marked as modified and must not
+be misrepresented as the original software.
