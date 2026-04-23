@@ -8,7 +8,7 @@
 
 [![Version](https://img.shields.io/badge/version-1.1.0--beta-7b68ee?style=flat-square)](https://github.com/morkulaarttu/MTO/releases)
 [![Platform](https://img.shields.io/badge/platform-Windows-0078d4?style=flat-square)](https://github.com/morkulaarttu/MTO/releases)
-[![License](https://img.shields.io/badge/license-GPL%20v3-green?style=flat-square)](LICENSE)
+[![License](https://img.shields.io/badge/license-GPL%20v3-green?style=flat-square)](license)
 
 </div>
 
@@ -123,7 +123,7 @@ Log files rotate automatically and never exceed 1 MB each. If something goes wro
 
 Copyright © 2026 @MorkulaArttu.
 
-Licensed under the **GNU General Public License v3**. See [LICENSE](LICENSE) for full terms.
+Licensed under the **GNU General Public License v3**. See [LICENSE](license) for full terms.
 
 ---
 
