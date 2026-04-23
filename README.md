@@ -121,7 +121,7 @@ Log files rotate automatically and never exceed 1 MB each. If something goes wro
 
 ## License
 
-Copyright © 2025 @MorkulaArttu.
+Copyright © 2026 @MorkulaArttu.
 
 Licensed under the **GNU General Public License v3**. See [LICENSE](LICENSE) for full terms.
 
